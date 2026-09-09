@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Quicksand&display=swap');
 
 :root {
-    --cream: #fbf1e4;
-    --brown: #4a2e1f;
-    --rose: #c97c86;
+    --cream: #f7f0d9;
+    --brown: #6d3d23;
+    --rose: #d16f7c;
     --radius: 16px;
 }
 
@@ -123,12 +123,12 @@ td, th {
     border-radius: var(--radius);
     cursor: pointer;
     margin-top: 0.5rem;
-    transition: background 0.2s ease, trasform 0.2s ease;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
 #feed-btn:hover {
     background: var(--brown);
-    transform: translate(-2px);
+    transform: translateY(-2px);
 }
 
 #adopt-form input,
