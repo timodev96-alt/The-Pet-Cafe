@@ -61,6 +61,15 @@ header {
     margin: 2rem auto;
 }
 
+#mood {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+#mood select {
+    margin-top: 0.5rem;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -82,13 +91,73 @@ td, th {
     padding: 2rem;
 }
 
+#pet, #adopt-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: var(--radius);
+    text-align: center;
+}
+#pet img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+#pet-bubble {
+    color: var(--rose);
+    font-weight: bold;
+}
+
+#feed-btn {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    background: var(--rose);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.2s ease, trasform 0.2s ease;
+}
+
+#feed-btn:hover {
+    background: var(--brown);
+    transform: translate(-2px);
+}
+
+#adopt-form input,
+#adopt-form button {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--cream);
+}
+
+#adopt-form button {
+    background: var(--rose);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#adopt-form button:hover {
+    background: var(--brown);
+}
+
 .cat-card {
     background: white;
     border-radius: var(--radius);
     overflow: hidden;
     padding-bottom: 1rem;
     text-align: center;
-    transition: trasform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .cat-card:hover {
@@ -97,13 +166,17 @@ td, th {
 
 .cat-card img {
     width: 100%;
-    height: 160px;
+    height: 400px;
     object-fit: cover;
 }
 footer {
     text-align: center;
     padding: 1.5rem;
     color: var(--rose);
+}
+
+.hidden {
+    display: none;
 }
 
 @media (max-width: 600px) {

@@ -1,7 +1,7 @@
 const MoodSelect = document.getElementById('mood-select');
 const MoodText = document.getElementById('mood-text');
 
-if (MoodSelectoodSelect) {
+if (MoodSelect) {
   MoodSelect.addEventListener('change', function () {
     if (MoodSelect.value === 'sleepy') {
       MoodText.textContent = "NAP TIME";
@@ -24,7 +24,8 @@ if (feedBtn) {
     feedBtn.addEventListener('click', function (){
         fed = !fed;
         petImg.src = fed ? 'eating.jpg' : 'sleeping.jpg';
-        petBubble.classList.toggle('hidden', !fed); 
+        petBubble.classList.toggle('hidden', !fed);
+        feedBtn.classList.add('hidden');
     });
 }
 
