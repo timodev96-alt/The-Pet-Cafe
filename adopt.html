@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet The Cats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="adopt.html">Adopt</a>
+    </nav>
+    <header>
+        <h1>Meet the Cats</h1>
+    </header>
+    <section id="cats">
+        <div class="cat-card">
+            <img src="biscuit.jpg" alt="Biscuit the cat">
+            <h3>Biscuit</h3>
+            <p>4 years old, loves naps.</p>
+        </div>
+        <div class="cat-card">
+            <img src="ember.jpg" alt="Ember the cat">
+            <h3>Ember</h3>
+            <p>2 years old, a little shy</p>
+        </div>
+    </section>
+
+    <section id="pet">
+        <h2>Say Hi to Marmalade</h2>
+        <img id="pet-img" src="sleeping.jpg" alt="Marmlade sleeping">
+        <p id="pet-bubble" class="hidden">Purrr! Thanks for the Snack!</p>
+        <button id="feed-btn">Feed the cat :D</button>
+    </section>
+
+    <section id="adopt-form">
+        <h2>Adoption Application</h2>
+        <p id="greeting">We can't wait to meet uu!</p>
+        <form id="form">
+            <input type="text" id="name-input" placeholder="Your Name" required>
+            <br><br>
+            <button type="submit" id="submit-btn">Send Application</button>
+        </form>
+        <p id="succeess-msg" class="hidden">Application sent to the cafe!</p>
+    </section>
+
+    <footer>
+        <p>Built with one cup of coffee by Timo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
